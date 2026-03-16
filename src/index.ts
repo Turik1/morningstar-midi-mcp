@@ -15,7 +15,7 @@ const __dirname = dirname(__filename);
 
 async function main() {
   const server = new McpServer({
-    name: 'morningstar-mcp',
+    name: 'morningstar-midi-mcp',
     version: '0.1.0',
   });
 

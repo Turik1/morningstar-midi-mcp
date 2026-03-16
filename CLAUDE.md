@@ -1,4 +1,4 @@
-# Morningstar MCP Server
+# morningstar-midi-mcp
 
 MCP server for configuring Morningstar Engineering MIDI controllers via natural language.
 

@@ -1,11 +1,11 @@
 {
-  "name": "morningstar-mcp",
+  "name": "morningstar-midi-mcp",
   "version": "0.1.0",
   "description": "MCP server for configuring Morningstar Engineering MIDI controllers via natural language",
   "type": "module",
   "main": "build/index.js",
   "bin": {
-    "morningstar-mcp": "./build/index.js"
+    "morningstar-midi-mcp": "./build/index.js"
   },
   "files": ["build/", "openmidi/data/"],
   "scripts": {

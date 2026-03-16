@@ -14,7 +14,7 @@ devices:
 #   "mcpServers": {
 #     "morningstar": {
 #       "command": "npx",
-#       "args": ["morningstar-mcp"]
+#       "args": ["morningstar-midi-mcp"]
 #     }
 #   }
 # }
