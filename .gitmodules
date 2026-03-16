@@ -1,0 +1,3 @@
+[submodule "openmidi"]
+	path = openmidi
+	url = https://github.com/Morningstar-Engineering/openmidi.git

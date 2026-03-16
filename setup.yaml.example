@@ -1,0 +1,20 @@
+# Morningstar MCP Server Configuration
+# Copy to ~/.config/morningstar-mcp/setup.yaml
+
+controller: MC8 Pro
+
+devices:
+  - name: Quad Cortex Mini
+    midi_channel: 1
+  - name: Strymon Timeline
+    midi_channel: 2
+
+# Claude Desktop configuration (~/.claude/claude_desktop_config.json):
+# {
+#   "mcpServers": {
+#     "morningstar": {
+#       "command": "npx",
+#       "args": ["morningstar-mcp"]
+#     }
+#   }
+# }

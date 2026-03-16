@@ -1,0 +1,31 @@
+{
+  "name": "morningstar-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for configuring Morningstar Engineering MIDI controllers via natural language",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "morningstar-mcp": "./build/index.js"
+  },
+  "files": ["build/", "openmidi/data/"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "start": "node build/index.js",
+    "postinstall": "git submodule update --init || true"
+  },
+  "keywords": ["mcp", "midi", "morningstar", "sysex"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "jzz": "^1.9.6",
+    "yaml": "^2.8.2",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  }
+}
