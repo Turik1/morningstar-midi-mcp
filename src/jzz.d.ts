@@ -1,16 +1,16 @@
 declare module 'jzz' {
-  function JZZ(): JZZ.Engine;
+  function JZZ(): Promise<JZZ.Engine>;
   namespace JZZ {
-    interface Engine extends Promise<Engine> {
+    interface Engine {
       info(): { inputs: PortInfo[]; outputs: PortInfo[] };
-      openMidiIn(name?: string): MidiPort;
-      openMidiOut(name?: string): MidiPort;
+      openMidiIn(name?: string): Promise<MidiPort>;
+      openMidiOut(name?: string): Promise<MidiPort>;
     }
     interface PortInfo {
       name: string;
       manufacturer: string;
     }
-    interface MidiPort extends Promise<MidiPort> {
+    interface MidiPort {
       send(data: number[]): MidiPort;
       connect(handler: (msg: number[]) => void): MidiPort;
       disconnect(handler: (msg: number[]) => void): MidiPort;
